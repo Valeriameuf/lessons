@@ -1,0 +1,155 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@font-face {
+  font-family: "Сausten";
+  src: url("../fonts/Causten-Black.woff2") format("woff2"),
+    url("../fonts/Causten-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Сausten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"),
+    url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* Base */
+body {
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+  font-weight: 400;
+}
+[class*="__container"] {
+  max-width: 1220px;
+}
+.font-secondary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+/* Primary-maket-section */
+
+.primary-maket-section__title {
+  color: #37393f;
+  font-size: 30px;
+}
+.primary-maket-section__content {
+  line-height: 1.44;
+}
+.font-secondary--color span {
+  color: #6b77e5;
+  font-size: 20px;
+}
+
+/* Secondary-maket-section */
+
+.secondary-maket-section__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+  color: #37393f;
+}
+.secondary-maket__content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.44;
+}
+
+/* ПОВЕРНЕННЯ СТИЛІВ СПИСКУ ПІСЛЯ ОБНУЛЕННЯ */
+.secondary-maket__content ul {
+  display: block;
+  margin: 0 0 15px 25px;
+}
+
+.secondary-maket__content ul li {
+  list-style: outside disc;
+  margin: 0 0 10px 0;
+}
+.secondary-maket__content ol {
+  display: block;
+  margin: 0 0 15px 25px;
+}
+
+.secondary-maket__content ol li {
+  list-style: outside decimal;
+  margin: 0 0 10px 0;
+}
+
+/* -----------------Article------------------------------ */
+
+/* Header */
+.header__nav-link,
+.footer__nav-link {
+  text-transform: uppercase;
+  color: #6b77e5;
+}
+
+/* Primary-article-section */
+
+.primary-article-section__title {
+  font-family: "Causten";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.44;
+  text-align: center;
+  text-shadow: 2px 5px 5px #6b77e5;
+  color: black;
+}
+.primary-article-section__text p {
+  font-family: "Causten";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: black;
+  text-decoration: underline;
+}
+.primary-article-section__photo {
+  font-family: "Causten";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.24;
+  color: #6b77e5;
+  text-transform: lowercase;
+}
+
+/* Secondary-article-section */
+.secondary-article-section__list li {
+  font-family: "Causten";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: black;
+  text-decoration: underline;
+}
+.secondary-article-section__content {
+  font-family: "Causten";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: black;
+}
+.contant--action span {
+  color: orchid;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px orange;
+}
+.secondary-article-section__content > p {
+  color: #6b77e5;
+}
+.highlight ~ p {
+  text-align: center;
+  text-decoration: overline;
+}
+.red-ligne {
+  text-indent: 50px;
+}
