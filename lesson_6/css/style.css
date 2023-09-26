@@ -1,0 +1,169 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@font-face {
+  font-family: "DM Serif Text";
+  src: url("../fonts/DMSerifText-Regular.woff2") format("woff2"),
+    url("../fonts/DMSerifText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+[class*="__container"] {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+}
+.main {
+  overflow-x: clip;
+}
+/* Header */
+.header {
+  background-color: rosybrown;
+  padding: 1.875rem 0 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.header__menu-list {
+  text-align: center;
+}
+.header__list-item:not(:last-child) {
+  padding-bottom: 0.8125rem;
+}
+.header__list-link {
+  text-shadow: 0.125rem 0.25rem 0.3125rem blueviolet;
+  text-transform: uppercase;
+}
+/* Section-Consulting  */
+.section-consulting {
+  margin-bottom: 3.125rem;
+}
+.container {
+  max-width: 43.25rem;
+  margin: 0 auto;
+}
+.section-consulting__img {
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+}
+.section-consulting__content {
+  max-width: 43.25rem;
+}
+.section-consulting-primary__text {
+  margin-bottom: 2.625rem;
+}
+.font-secondary {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.27;
+}
+.section-consulting__title {
+  color: #37393f;
+  font-size: 1.875rem;
+  margin-bottom: 0.1875rem;
+}
+.section-consulting__content p {
+  font-size: 1.125rem;
+  line-height: 1.44;
+  color: #7d7d7d;
+}
+.section-consulting-secondary__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #6b77e5;
+  margin-bottom: 0.75rem;
+}
+.section-consulting__text:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+/* Section-Benefits */
+.benefits-section {
+  margin-bottom: 3.125rem;
+}
+.benefits-section__img {
+  max-width: 100%;
+}
+.benefits-section__content {
+  display: inline-block;
+  max-width: 20.75rem;
+  margin-left: 1.8125rem;
+}
+.benefits-section__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 1.24;
+  color: #37393f;
+  margin-bottom: 0.9375rem;
+}
+.benefits-section-secondary__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.27;
+  color: #40ddb6;
+  margin-bottom: 1.5rem;
+}
+.benefits-section__item {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  color: #7d7d7d;
+}
+
+.benefits-section__item:not(:last-child) {
+  padding-bottom: 0.9375rem;
+}
+
+/* Jewellery-Section */
+.jewellery-section {
+  background: #fff9f4;
+}
+.jewellery-section__content {
+  display: inline-block;
+  max-width: 35.1875rem;
+  margin-right: 2.375rem;
+}
+.jewellery-section__title {
+  font-size: 1.75rem;
+  color: #d06b00;
+  margin-bottom: 0.8125rem;
+}
+.jewellery-section-primary__title {
+  font-family: "DM Serif Text";
+  font-size: 3.6875rem;
+  line-height: 1.46;
+  color: #0e333d;
+  margin-bottom: 1.5625rem;
+}
+.jewellery-section__content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #474747;
+}
+
+/* FOOTER */
+.footer {
+  background-color: aquamarine;
+  padding: 1.875rem 0 1.875rem;
+}
+.footer__menu-list {
+  text-align: center;
+}
+.footer__menu-list li {
+  display: inline-block;
+}
+.footer__list-item:not(:last-child) {
+  padding-right: 0.9375rem;
+}
+.footer__list-link {
+  color: rgb(207, 22, 151);
+  text-shadow: 0.0625rem 0.25rem 0.3125rem blue;
+  text-transform: uppercase;
+}
