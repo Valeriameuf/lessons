@@ -1,0 +1,309 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "Cormorant Infan";
+  src: url("../fonts/CormorantInfant-Bold.woff2") format("woff2"),
+    url("../fonts/CormorantInfant-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"),
+    url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+}
+
+.main {
+  overflow-x: clip;
+}
+
+.container {
+  max-width: 73.3125rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+.header {
+  margin-bottom: 160px;
+}
+/* Section-Create */
+.section-create {
+  margin-bottom: 10rem;
+}
+.section-create-secondary__title {
+  font-family: "Cormorant Infan";
+  font-size: 20px;
+  line-height: 1;
+  color: #d58417;
+  margin-bottom: 1.6875rem;
+}
+.section-create-primary__title {
+  font-family: "Cormorant Infan";
+  font-size: 64px;
+  line-height: 1;
+  max-width: 31.4375rem;
+  margin-bottom: 1.875rem;
+}
+.section-create__content {
+  display: inline-block;
+  margin-right: 5.5625rem;
+}
+.section-create__img {
+  vertical-align: top;
+  display: inline-block;
+}
+.primary__img,
+.secondary__img {
+  display: inline-block;
+}
+.primary__img:not(:last-child) {
+  margin-right: 30px;
+}
+.section-create__text p {
+  font-family: "Cormorant Infan";
+  font-size: 30px;
+  line-height: 1.4;
+  color: #606060;
+  max-width: 30.5625rem;
+}
+.section-create-primary__img {
+  border-radius: 235px;
+  box-shadow: 12px -11px 0 0 #fff, 12px -11px 0px 1px #502203;
+  margin-top: 1.5625rem;
+}
+.section-create-secondary__img {
+  border-radius: 235px;
+  box-shadow: 11px -20px 0 0 #fff, 11px -20px 0px 1px #502203;
+  margin-top: -3.4375rem;
+}
+
+/* Section-Clothing */
+
+.section-clothing {
+  margin: 0 auto 6.25rem;
+}
+.section-clothing__container {
+  max-width: 77.3125rem;
+  padding: 0 0.625rem;
+  margin: 0 auto;
+}
+.section-clothing__title {
+  font-family: "Core Sans C";
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.035rem;
+  color: #3c4242;
+  margin-bottom: 1.875rem;
+}
+.section-clothing-secondary__title {
+  font-family: "Core Sans C";
+  font-size: 20px;
+  line-height: 1.67;
+  letter-spacing: 0.025rem;
+  color: #807d7e;
+  margin-bottom: 1.5625rem;
+}
+.section-clothing__text {
+  max-width: 76.25rem;
+}
+.section-clothing__text p,
+.section-clothing-secondary__text p {
+  font-family: "Causten";
+  font-size: 20px;
+  line-height: 1.67;
+  letter-spacing: 0.025rem;
+  color: #807d7e;
+  margin-bottom: 1.25rem;
+}
+.section-clothing__text span,
+.section-clothing-secondary__text span {
+  font-family: "Core Sans C";
+  font-size: 18px;
+}
+.section-clothing__text p:last-child {
+  margin-bottom: 1.5625rem;
+}
+.section-clothing__btn {
+  font-family: "Core Sans C";
+  font-size: 20px;
+  border: 1px solid transparent;
+  background-color: #8a33fd;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.625rem 1.5625rem;
+}
+
+/* Section-Licencing*/
+.section-licencing {
+  margin-bottom: 9.375rem;
+}
+.section-licencing__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+}
+.section-licencing__title {
+  text-align: center;
+  color: #37393f;
+}
+.decor-title {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 1.46;
+  margin-bottom: 1rem;
+}
+/* .title--decor h5::before {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #f447ff;
+} */
+/* #square {
+  width: 12px;
+  height: 12px;
+  background: #f447ff;
+} */
+.section-licencing__title h2 {
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 4.375rem;
+}
+.big-title__content {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #37393f;
+  margin-bottom: 0.6875rem;
+}
+
+.title__content--color {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  color: #37393f;
+  margin-bottom: 0.5rem;
+}
+.title__content--color span {
+  font-weight: 400;
+  color: #40ddb6;
+}
+.title-color {
+  margin-bottom: 6.25rem;
+}
+
+.section-licencing__text {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+  margin-bottom: 1.5rem;
+}
+.section-licencing__text span {
+  color: #40ddb6;
+}
+.text-content {
+  margin-bottom: 2rem;
+}
+.text-color {
+  margin-bottom: 6.25rem;
+}
+
+/* Section-Info */
+.section-info {
+  margin-bottom: 3.75rem;
+}
+.section-info__container {
+  max-width: 51.875rem;
+  padding: 0 0.625rem;
+  margin: 0 auto;
+}
+.section-info__title {
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+  color: #37393f;
+  margin-bottom: 0.9375rem;
+}
+.section-info__content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.44;
+  color: #7d7d7d;
+  margin-bottom: 2.1875rem;
+}
+
+.section-info__content p:last-child {
+  padding-bottom: 2.1875rem;
+}
+.section-info__list {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #7d7d7d;
+}
+
+.list {
+  margin: 0 0 35px 25px;
+}
+
+.list .list-item {
+  list-style: outside disc;
+  margin: 0 0 10px 0;
+}
+
+.section-info__list .secondary-list__item {
+  list-style: outside decimal;
+  margin: 0 0 10px 0;
+}
+.list-section {
+  width: 431px;
+  height: 130px;
+  background: #fff;
+  box-shadow: 11px 11px 4px rgba(168, 198, 245, 0.3);
+  border-radius: 32px;
+  margin-bottom: 35px;
+}
