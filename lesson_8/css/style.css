@@ -1,0 +1,508 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Light.woff2") format("woff2"),
+    url("../fonts/Causten-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"),
+    url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Priori Sans";
+  src: url("../fonts/AnyConv.com__Priori\ Sans\ Regular.woff2") format("woff2"),
+    url("../fonts/AnyConv.com__Priori\ Sans\ Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+}
+
+.container {
+  max-width: 63.9375rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+/* Header */
+.header {
+  width: 100%;
+  background: #000;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  box-shadow: none;
+  transition: 0.3s ease-in-out background;
+  padding: 1.875rem 0 1.875rem;
+}
+.header__container {
+  margin: 0 auto;
+  max-width: 76.25rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  font-family: "Priori Sans";
+  font-size: 28px;
+  line-height: 1.22;
+  display: flex;
+  gap: 1.25rem;
+  color: rgb(207, 22, 151);
+  text-shadow: 0.0625rem 0.25rem 0.3125rem blue;
+  text-transform: uppercase;
+  padding: 0 0.9375rem;
+}
+.header__logo img {
+  height: auto;
+}
+.logo {
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+.header__menu-link:hover {
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+}
+.header__telephone {
+  font-family: "Priori Sans";
+  font-size: 28px;
+  line-height: 1.22;
+  color: rgb(207, 22, 151);
+  text-shadow: 0.0625rem 0.25rem 0.3125rem blue;
+  text-transform: uppercase;
+  padding: 0 0.9375rem;
+}
+.header__telephone:hover {
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+}
+
+/* Section-Pinkcat */
+.section-pinkcat {
+  padding: 21.875rem 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(216, 52, 216, 1) 0%,
+      rgba(219, 70, 214, 0.2582282913165266) 70%,
+      rgba(211, 25, 219, 0.0845588235294118) 100%
+    ),
+    url("../images/banner-back-pink.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-pinkcat__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-pinkcat__title {
+  font-family: "Priori Sans";
+  font-size: 64px;
+  line-height: 1.22;
+  color: rgb(207, 22, 151);
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+  text-align: center;
+}
+.section-pinkcat__title span {
+  color: #000;
+}
+/* Section-business */
+.section-business {
+  padding: 9.4375rem 3.25rem;
+  margin-bottom: 6.25rem;
+}
+.section-business__title {
+  /* position: relative; */
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #37393f;
+  margin-bottom: 1rem;
+}
+#square {
+  /* position: absolute; */
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+.section-business-primary__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  max-width: 25.8125rem;
+  color: #37393f;
+  margin-bottom: 1.25rem;
+}
+.section-business__text p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+  max-width: 42.0625rem;
+  margin-bottom: 1.25rem;
+}
+.section-business__list {
+  margin-bottom: 2.6875rem;
+}
+.section-business__item {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.65;
+  color: #37393f;
+  background: url("../images/circle.svg") 0 3px no-repeat;
+  padding-left: 2.25rem;
+}
+.section-business__item:not(:last-child) {
+  margin-bottom: 1.4375rem;
+}
+
+.section-business__content {
+  margin-bottom: 2.3125rem;
+}
+.section-business__info--decor {
+  display: inline-block;
+  max-width: 295px;
+  padding: 31px 32px;
+  border: 1px solid #e3e3e3;
+}
+.section-business__info--decor:not(:last-child) {
+  margin-right: 1.3125rem;
+}
+.business-content {
+  background: url("../images/exp-icon.svg") no-repeat;
+  padding-left: 3.625rem;
+}
+.winner--decor {
+  background: url("../images/winn-icon.svg") no-repeat;
+}
+.business-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #37393f;
+  margin-bottom: 3px;
+}
+.business-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  color: #7d7d7d;
+  max-width: 10.8125rem;
+}
+.section-business__btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  background-color: #6b77e5;
+  color: #fff;
+  padding: 1.3125rem 1.6875rem;
+}
+
+/* Section-Clothing */
+.section-clothing {
+  margin-bottom: 6.25rem;
+}
+.section-clothing__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-clothing-primary__tile {
+  font-family: "Core Sans C";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+  color: #3c4242;
+  background: url("../images/decor-clothing.svg") 0 2px no-repeat;
+  padding-left: 0.9375rem;
+  margin-bottom: 1.875rem;
+}
+.section-clothing-secondary__title {
+  font-family: "Core Sans C";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  color: #807d7e;
+  margin-bottom: 1.5625rem;
+}
+.section-clothing__text {
+  font-family: "Causten";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  color: #807d7e;
+}
+.indentation p:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.indentation p:last-child {
+  margin-bottom: 1.5625rem;
+}
+.section-clothing__text p {
+  margin-bottom: 1.25rem;
+}
+.section-clothing__text p span {
+  font-family: "Core Sans C";
+  font-size: 18px;
+}
+.section-clothing__btn {
+  display: inline-block;
+  font-family: "Core Sans C";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  color: #807d7e;
+  border: 2px solid #8a33fd;
+  border-radius: 50%;
+  background: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  padding: 1.3125rem 2rem;
+}
+
+.section-clothing__btn:hover {
+  background: transparent;
+}
+
+/* Section-Made */
+.section-made {
+  margin-bottom: 6.25rem;
+}
+.section-made__container {
+  max-width: 78.75rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-made__aria {
+  font-size: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-made__content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  height: 100%;
+  padding: 183px 74px 174px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/section-made.jpg) center / cover no-repeat;
+}
+.section-made-second__img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  min-height: 655px;
+  background: url(../images/section-made-people.png) center top / cover
+    no-repeat;
+}
+.section-made__title {
+  font-family: "Core Sans C", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  color: #fff;
+  margin-bottom: 1.875rem;
+}
+.section-made__text p {
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 3.125rem;
+}
+.section-made__btn {
+  display: inline-block;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  padding: 12px 44px;
+}
+
+/* Section-cards */
+.section-cards {
+  margin-bottom: 9.375rem;
+}
+.section-cards__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-cards__titles {
+  text-align: center;
+}
+.section-cards__titles h5 {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #37393f;
+  margin-bottom: 0.875rem;
+}
+#square-second {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+.section-cards__titles h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #37393f;
+  margin-bottom: 0.875rem;
+}
+.section-cards__text {
+  margin-bottom: 47px;
+}
+.section-cards__text p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+  margin: 0 auto;
+  max-width: 53.25rem;
+}
+.section-cards-primary__block {
+  white-space: nowrap;
+  margin-bottom: 58px;
+}
+.section-cards-secondary__block {
+  white-space: nowrap;
+}
+.first-card,
+.second-card,
+.third-card {
+  display: inline-block;
+  max-width: 24rem;
+  margin-right: 2.125rem;
+}
+.back-one,
+.back-second,
+.back-third,
+.block-one,
+.block-second,
+.block-third {
+  min-width: 24rem;
+  min-height: 31.3125rem;
+  margin-bottom: 1.5rem;
+}
+.back-one {
+  background: url(../images/project-1.png) center/cover no-repeat;
+}
+.back-second {
+  background: url(../images/project-2.png) center/cover no-repeat;
+}
+.back-third {
+  background: url(../images/project-3.png) center/cover no-repeat;
+}
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+  margin-bottom: 0.625rem;
+}
+.back-date {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+  background: url(../images/date.svg) left center no-repeat;
+  padding-left: 1.625rem;
+}
+.block-one {
+  background: url(../images/project-4.png) center/cover no-repeat;
+}
+.block-second {
+  background: url(../images/project-5.png) center/cover no-repeat;
+}
+.block-third {
+  background: url(../images/project-6.png) center/cover no-repeat;
+}
