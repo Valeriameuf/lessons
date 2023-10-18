@@ -134,7 +134,7 @@ img {
 .products__container h4 {
   font-size: 1.5625rem;
   line-height: 1.4;
-  padding-bottom: 3.4375rem;
+  margin-bottom: 3.4375rem;
 }
 .products__container::after {
   content: "";
