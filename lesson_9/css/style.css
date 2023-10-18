@@ -138,8 +138,7 @@ img {
 }
 .products__container::after {
   content: "";
-  display: inline-block;
-  position: absolute;
+  display: block;
   width: 71.5rem;
   border-top: 1px solid #909090;
 }
