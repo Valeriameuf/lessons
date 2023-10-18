@@ -1,0 +1,709 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap");
+
+@font-face {
+  font-family: "Cormorant Infan";
+  src: url("../fonts/CormorantInfant-Bold.woff2") format("woff2"),
+    url("../fonts/CormorantInfant-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Product Sans Infanity";
+  src: url("../fonts/ProductSansInfanity.woff2") format("woff2"),
+    url("../fonts/ProductSansInfanity.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #37393f;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.font-secondary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0.9375rem 2rem;
+  color: #050505;
+  font-size: 13px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list,
+.header__secondary-list {
+  font-family: "Product Sans Infanity", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__secondary-list-link img {
+  padding-right: 2rem;
+}
+.header__list-link:focus,
+.header__secondary-list-link:focus {
+  color: orangered;
+}
+/* Hero-Section */
+.hero-section {
+  padding: 420px 0;
+  margin-bottom: 4.5rem;
+  background: url("../images/hero-section.jpg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+.hero-section__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+}
+.hero-section__container h2 {
+  font-family: "Product Sans Infanity", sans-serif;
+  font-size: 61px;
+  line-height: 1.04;
+  text-transform: uppercase;
+  color: #050505;
+  margin-bottom: 0.125rem;
+}
+.hero-section__container p {
+  font-family: "Product Sans Infanity", sans-serif;
+  font-size: 18px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: #050505;
+}
+/* Products */
+.products {
+  margin-bottom: 3.4375rem;
+}
+.products__container {
+  max-width: 71.5rem;
+  font-family: "Product Sans Infanity";
+  line-height: 1.4;
+  color: #050505;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.products__container h4 span {
+  font-size: 26px;
+  color: #909090;
+  line-height: 1.34;
+}
+.products__container h4 {
+  font-size: 1.5625rem;
+  line-height: 1.4;
+  padding-bottom: 3.4375rem;
+}
+.products__container::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 71.5rem;
+  border-top: 1px solid #909090;
+}
+/* Bestsellers */
+.section-bestseller {
+  margin-bottom: 3.125rem;
+}
+.section-bestseller__container {
+  font-family: "Product Sans Infanity", sans-serif;
+  color: #050505;
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section-bestseller__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bestseller-many__img {
+  display: flex;
+  gap: 20px;
+}
+
+.section-bestseller__container h1 {
+  font-size: 114px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 1.375rem;
+}
+.bestseller-card:nth-child(3n + 1) {
+  margin-bottom: 1.5rem;
+}
+.indentation {
+  margin-bottom: 40px;
+}
+.best-seller {
+  font-size: 9px;
+  line-height: 1.66;
+  letter-spacing: 1px;
+  text-align: start;
+  text-transform: uppercase;
+  margin-bottom: 0.9375rem;
+}
+.bestseller-big__img p {
+  font-size: 12px;
+  line-height: 1.45;
+}
+.bestseller-big__img img {
+  margin-bottom: 0.375rem;
+}
+.bestseller-card p {
+  font-size: 12px;
+  line-height: 1.45;
+  max-width: 14.3125rem;
+}
+/* Section-Consulting */
+.section-consulting {
+  margin-bottom: 2.5rem;
+}
+
+.section-consulting__title {
+  font-size: 30px;
+  margin-bottom: 0.1875rem;
+}
+.section-consulting-primary__text p {
+  max-width: 43.25rem;
+  margin-bottom: 2.625rem;
+}
+.section-consulting-primary__text p,
+.section-consulting__text p {
+  line-height: 1.46;
+  text-align: justify;
+  color: #7d7d7d;
+}
+.section-consulting-secondary__title {
+  font-size: 20px;
+  color: #6b77e5;
+  margin-bottom: 0.75rem;
+}
+
+/* Benefits-Section */
+
+.benefits-section {
+  margin-bottom: 3.125rem;
+}
+.benefits-section__container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.benefits-section__img {
+  max-width: 100%;
+}
+.benefits-section__content {
+  display: inline-block;
+  max-width: 20.75rem;
+  margin-top: 1.25rem;
+  margin-left: 1.8125rem;
+}
+.benefits-section__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 1.24;
+  margin-bottom: 0.9375rem;
+}
+.benefits-section-secondary__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.27;
+  color: #40ddb6;
+  margin-bottom: 1.5rem;
+}
+.benefits-section__item {
+  color: #7d7d7d;
+  padding-left: 35px;
+  background: url("../images/circle.svg") no-repeat;
+  background-size: contain;
+}
+
+.benefits-section__item:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+/* Section-Business-Plan */
+.section-business-plan {
+  padding: 3.125rem;
+  margin-bottom: 9.375rem;
+}
+.section-business-plan__container {
+  display: flex;
+  gap: 6.875rem;
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-business-plan-left {
+  background-color: #f4f4f4;
+}
+.section-business-plan-left img {
+  margin-bottom: 1.25rem;
+}
+.section-business-plan-left__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.21;
+  margin-bottom: 0.8125rem;
+}
+.section-business-plan-left__content p {
+  font-weight: 400;
+  color: #7d7d7d;
+  margin-bottom: 0.9375rem;
+}
+.content-link {
+  position: relative;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #37393f;
+  padding-bottom: 2px;
+}
+.content-link:hover {
+  color: #6b77e5;
+}
+
+.content-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #37393f;
+}
+.content-link:hover::after {
+  border: 2px solid #6b77e5;
+}
+
+.right__title h5 {
+  position: relative;
+  font-weight: 500;
+  color: #37393f;
+  margin-bottom: 1rem;
+}
+.right__title h5::before {
+  content: "";
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  left: -0.9375rem;
+  background-color: #40ddb6;
+}
+.right__title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #37393f;
+  margin-bottom: 0.625rem;
+}
+.section-business-plan-right__content {
+  margin-bottom: 3rem;
+}
+.section-business-plan-right__content p {
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+}
+.section-business-plan-right__content p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.section-business-plan-right__cards--decor {
+  display: inline-block;
+  max-width: 37.5rem;
+  padding: 28px 40px;
+  border: 1px solid #e3e3e3;
+}
+.section-business-plan-right__cards--decor:not(:last-child) {
+  margin-bottom: 1.9375rem;
+}
+.section-business-plan-right__cards--decor:last-child {
+  margin-bottom: 3rem;
+}
+.cards-content {
+  background: url("../images/circle.svg") no-repeat;
+}
+.cards-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-left: 2.8125rem;
+  margin-bottom: 0.75rem;
+}
+.cards-content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #7d7d7d;
+  line-height: 1.47;
+  padding-left: 2.8125rem;
+}
+.cards__btn {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  background-color: #6b77e5;
+  color: #fff;
+  padding: 1.3125rem 1.6875rem;
+}
+.cards__btn:hover {
+  background: #40ddb6;
+  color: #37393f;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+/* Section-Work-Proces*/
+.section-work-process {
+  margin-bottom: 6.25rem;
+}
+.section-work-process__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-work-process__titles {
+  text-align: center;
+}
+.section-work-process__titles h5 {
+  position: relative;
+  font-weight: 500;
+  color: #37393f;
+  margin-bottom: 1rem;
+}
+.section-work-process__titles h5::before {
+  content: "";
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 3px;
+  left: 515px;
+  background-color: #40ddb6;
+}
+.section-work-process__titles h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.21;
+  margin-bottom: 2.5625rem;
+}
+.process-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+}
+.work-card {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 3.625rem 2.6875rem;
+}
+.work-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+  margin-bottom: 1rem;
+}
+.work-card p {
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7d7d7d;
+  margin-bottom: 2.3125rem;
+}
+.work-card a {
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: #6b77e5;
+}
+.work-card a:hover {
+  color: #7d7d7d;
+  opacity: 0.5;
+}
+.date--decor,
+.consult--decor,
+.work--decor {
+  position: relative;
+}
+.date--decor::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 9.375rem;
+  top: -1.875rem;
+  background: url("../images/date.svg") no-repeat;
+}
+.consult--decor::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 9.375rem;
+  top: -1.875rem;
+  background: url("../images/consult.svg") no-repeat;
+}
+.work--decor::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 9.375rem;
+  top: -1.875rem;
+  background: url("../images/service.svg") no-repeat;
+}
+
+/* Section-Jewellery */
+.section-jewellery {
+  padding: 7.5rem 13.625rem;
+  margin-bottom: 10rem;
+}
+.section-jewellery__container {
+  display: flex;
+  gap: 1.375rem;
+  max-width: 73.3125rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-jewellery__title {
+  position: relative;
+  max-width: 30.5rem;
+  padding-top: 60px;
+}
+.section-jewellery__title h2 {
+  font-family: "Cormorant Infan";
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 0.8125rem;
+}
+.section-jewellery__cards {
+  display: flex;
+  gap: 3.1875rem;
+}
+.section-jewellery__title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19rem;
+  left: 0;
+  border: 2px solid #78473b;
+}
+.primary-card,
+.secondary-card {
+  width: 100%;
+}
+.primary-card img,
+.secondary-card img {
+  width: 100%;
+  box-shadow: -9px -9px 0 0 #fff, -9px -9px 0px 1px #000;
+  margin-bottom: 1.5625rem;
+}
+.card-text p:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.card-text {
+  font-family: "Cormorant Infan";
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000;
+}
+.card-title {
+  font-family: "Cormorant Infan";
+  font-size: 46px;
+  line-height: 1.13;
+  color: #000;
+  margin-bottom: 1.9375rem;
+}
+/* Hard-Game */
+.section-hard-game {
+  padding: 50px 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.section-hard-game__container {
+  max-width: 76.25rem;
+  background: rgb(110, 198, 249) url("../images/pngwing.com.png");
+  box-shadow: 10px -9px 5px 0px rgba(204, 118, 204, 0.65);
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.section-hard-game__container h2 {
+  text-align: center;
+  top: 10px;
+  font-family: "Tourney", sans-serif;
+  font-size: 74px;
+  line-height: 1.2;
+  color: rgba(252, 6, 186, 0.921);
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de,
+    0 0 150px #ff00de;
+}
+.hard-game {
+  min-height: 650px;
+  text-align: initial;
+  font-size: 0;
+}
+.game__root {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+}
+.game__root-1 {
+  width: 100px;
+  height: 90px;
+  background: url("../images/monets-mario.png") no-repeat;
+  background-size: contain;
+}
+.game__root-1:hover ~ .game__root-2,
+.game__root-2:hover {
+  visibility: visible;
+}
+.game__root-2 {
+  width: 1140px;
+  height: 90px;
+  background: url("../images/monets-mario.png") repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+
+.game__root-3 {
+  width: 100px;
+  height: 90px;
+  margin-left: 1070px;
+  background: url("../images/monets-mario.png") no-repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+.game__root-2:hover ~ .game__root-3,
+.game__root-3:hover {
+  visibility: visible;
+}
+.game__root-3-1 {
+  width: 1140px;
+  height: 90px;
+  background: url("../images/monets-mario.png") repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+.game__root-3:hover ~ .game__root-3-1,
+.game__root-3-1:hover {
+  visibility: visible;
+}
+.game__root-4 {
+  width: 100px;
+  height: 90px;
+  background: url("../images/monets-mario.png") no-repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+.game__root-3-1:hover ~ .game__root-4,
+.game__root-4:hover {
+  visibility: visible;
+}
+.game__root-4-1 {
+  width: 300px;
+  height: 90px;
+  background: url("../images/monets-mario.png") repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+.game__root-4:hover ~ .game__root-4-1,
+.game__root-4-1:hover {
+  visibility: visible;
+}
+.game__root-5 {
+  width: 100px;
+  height: 90px;
+  background: url("../images/princess-game-2.png") no-repeat;
+  background-size: contain;
+  visibility: hidden;
+}
+.game__root-4-1:hover ~ .game__root-5 {
+  visibility: visible;
+  height: 90px;
+}
+/* Footer */
+.footer {
+  padding-top: 18.375rem;
+  padding-bottom: 15.0625rem;
+  background: url("../images/footer.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer__container {
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.footer__content {
+  font-family: "Product Sans Infanity";
+  font-size: 13px;
+  line-height: 1.07;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #050505;
+}
+.footer__content h3 {
+  font-size: 55px;
+  line-height: 1.09;
+  color: #fff;
+  margin-bottom: 4.0625rem;
+}
+.footer__content a {
+  text-transform: uppercase;
+}
+.footer__content a:not(:last-child) {
+  margin-bottom: 0.8125rem;
+}
+.footer__content a:hover {
+  color: orangered;
+}
