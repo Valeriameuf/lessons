@@ -1,0 +1,126 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "Product Sans Infanity";
+  src: url("../fonts/ProductSansInfanity.woff2") format("woff2"),
+    url("../fonts/ProductSansInfanity.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base */
+body {
+  height: 100%;
+  font-family: "Product Sans Infanity", sans-serif;
+  font-size: 18px;
+  color: #37393f;
+}
+
+section {
+  padding: 50px 15px;
+  margin-bottom: 3.125rem;
+}
+/* Header */
+.header {
+  background-color: #37393f;
+  color: #fff;
+  padding: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.header__icon--fill {
+  /* зафарбувати обводку */
+  stroke: #40ddb6;
+  /* залити кольором фон */
+  fill: transparent;
+}
+.header__icon--fill:hover {
+  stroke: #ffffff;
+}
+.icon--fill {
+  fill: #ffffff;
+}
+.icon--fill:hover {
+  fill: #40ddb6;
+}
+/* Business */
+.section-business__ptimary img,
+.section-business__secondary img {
+  margin-bottom: 0.5rem;
+}
+.section-business__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Section-Businessplan */
+.section-businessplan__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.section-businessplan__content img {
+  margin-bottom: 0.9375rem;
+}
+.icon__list li img {
+  margin-bottom: 0.5rem;
+}
+
+/* Section-Partners */
+.section-partners {
+  padding: 3.125rem;
+}
+.partners__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners__list img {
+  margin-bottom: 0.625rem;
+}
+/* Section-Solutions */
+.section-solutions {
+  background-color: #37393f;
+}
+.section-solutions__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  color: #ffffff;
+}
+.section-solutions__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Section-Provide */
+.section-provide__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.section-provide__progress-bar,
+.section-provide__icon,
+.section-provide__contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5625rem;
+}
