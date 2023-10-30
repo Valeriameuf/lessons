@@ -1,0 +1,11 @@
+@import url("reset.css");
+
+.user-icon use {
+  fill: black;
+}
+.arow-right use {
+  stroke: black;
+}
+.circle use {
+  fill: black;
+}
