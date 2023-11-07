@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 11</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Shop</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Men</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Women</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Combos</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Joggers</a></li>
+                </ul>
+            </nav>
+            <div class="header__form">
+                <form>
+                    <button type="submit"></button>
+                    <input type="text" placeholder="Search">
+                </form>
+            </div>
+            <ul class="header__icon">
+                <li>
+                    <a href="#"></a>
+                    <svg class="header__icon-svg" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-like">
+
+                        </use>
+                    </svg>
+
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <svg class="header__icon-svg" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-user">
+
+                        </use>
+                    </svg>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <svg class="header__icon-svg" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-shopping-cart">
+
+                        </use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="hero-section section">
+                <div class="hero-section__container">
+                    <div class="hero-section__card-slider">
+                        <div class="hero-section__photos">
+                            <div class="hero-section__img hero-section__img--frame"><img
+                                    src="img/small-photo-shoping.webp" alt="photo hoody">
+                            </div>
+                            <div class="hero-section__img hero-section__img--frame"><img
+                                    src="img/women-black-hoody.webp" alt="photo hoody">
+                            </div>
+                            <div class="hero-section__img hero-section__img--frame"><img
+                                    src="img/small-photo-shoping3.webp" alt="photo hoody">
+                            </div>
+                        </div>
+                        <img src="img/big-photo-shop.webp" srcset="img/big-photo-2x.webp 2x" alt="women black hoody">
+                    </div>
+                    <div class="hero-section__card-info">
+                        <div class="hero-section__list">
+                            <a href="#">Shop</a>
+                            <a href="#">Women</a>
+                            <a href="#">Top</a>
+                        </div>
+                        <h1 class="hero-section__title title">Raven Hoodie With
+                            Black colored Design</h1>
+                        <div class="rating hero-section__rating ">
+                            <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
+                            <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
+                            <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
+                            <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
+                            <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
+                        </div>
+                        <p class="hero-section__grade">3.4</p>
+                        <div class="hero-section__comment">
+                            <a class="hero-section__comment-link" href="#">
+                                <svg width="20" height="18">
+                                    <use href="./img/symbol-defs.svg#icon-message">
+
+                                    </use>
+                                </svg>
+                            </a>
+                            <a class="hero-section__comment-link link" href="#">120 comments</a>
+                        </div>
+                        <div class="hero-section__size">
+                            <h4>Select Size</h4>
+                            <a href="#">Size Guide</a>
+                            <a href="#">
+                                <img src="img/arow-right.svg" alt="link arow">
+                            </a>
+                            <div class="button-size hero-section__size-btn ">
+                                <button class="button-size__item">XS</button>
+                                <button class="button-size__item">S</button>
+                                <button class="button-size__item">M</button>
+                                <button class="button-size__item">L</button>
+                                <button class="button-size__item">XL</button>
+                            </div>
+                        </div>
+                        <div class="hero-section__colours">
+                            <h4>Colours Available</h4>
+                            <div class="choose-colours hero-section__colours-btn">
+                                <ul class="choose-colours__list">
+                                    <li class="choose-colours__item">
+                                        <button class="choose-colours__btn">
+                                            <svg class="choose-colours__btn--border" width="30" height="30">
+                                                <use href="./img/symbol-defs.svg#icon-colour-circle">
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="choose-colours__item">
+                                        <button class="choose-colours__btn choose-colours__btn--border">
+                                            <svg width="30" height="30">
+                                                <use href="./img/symbol-defs.svg#icon-colour-circle">
+
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="choose-colours__item">
+                                        <button class="choose-colours__btn choose-colours__btn--border">
+                                            <svg width="30" height="30">
+                                                <use href="./img/symbol-defs.svg#icon-colour-circle">
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="choose-colours__item">
+                                        <button class="choose-colours__btn choose-colours__btn--border">
+                                            <svg width="30" height="30">
+                                                <use href="./img/symbol-defs.svg#icon-colour-circle">
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                    <li class="choose-colours__item">
+                                        <button class="choose-colours__btn choose-colours__btn--border">
+                                            <svg width="30" height="30">
+                                                <use href="./img/symbol-defs.svg#icon-colour-circle">
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hero-section__button">
+                            <button class="button hero-section__btn">
+                                <svg width="20" height="20">
+                                    <use href="./img/symbol-defs.svg#icon-shopping-cart">
+                                    </use>
+                                </svg>
+                                Add to cart
+                            </button>
+                            <button class="button-price hero-section__btn--transparent">&#36; 63.00</button>
+                        </div>
+                        <div class="advantages hero-section__advantages">
+                            <div class="advantages__card">
+                                <img src="img/payment.svg" alt="icon payment">
+                                <p>Secure payment</p>
+
+                            </div>
+                            <div class="advantages__card">
+                                <img src="img/camion.svg" alt="icon camion">
+                                <p>Free shipping</p>
+                            </div>
+                            <div class="advantages__card">
+                                <img src="img/sise-fit.svg" alt="icon size">
+                                <p>Size & Fit</p>
+                            </div>
+                            <div class="advantages__card">
+                                <img src="img/returns.svg" alt="icon returns">
+                                <p>Free Shipping & Returns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-descr">
+                <div class="section-descr__container">
+                    <div class="section-descr__text">
+                        <h2 class="section-descr__title  title--decor">Product Description</h2>
+                        <div class="section-descr__links">
+                            <a href="#">Product Description</a>
+                            <a href="#">User comments</a>
+                            <a href="#">Question & Answer</a>
+                        </div>
+                        <p>100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck.
+                            Precisely stitched with no
+                            pilling & no fading. Provide all-time comfort. Anytime, anywhere. Infinite range of
+                            matte-finish HD prints.</p>
+                        <div class="section-descr__chart">
+                            <ul class="section-descr__list">
+                                <li class="section-descr__item">
+                                    <h5>Fabric</h5>
+                                    <p>Bio-washed Cotton</p>
+                                </li>
+                                <li class="section-descr__item">
+                                    <h5>Pattern</h5>
+                                    <p>Printed</p>
+                                </li>
+                                <li class="section-descr__item">
+                                    <h5>Fit</h5>
+                                    <p>Regular-fit</p>
+                                </li>
+                                <li class="section-descr__item">
+                                    <h5>Neck</h5>
+                                    <p>Round Neck</p>
+                                </li>
+                                <li class="section-descr__item">
+                                    <h5>Sleeve</h5>
+                                    <p>Half-sleeves</p>
+                                </li>
+                                <li class="section-descr__item">
+                                    <h5>Style</h5>
+                                    <p>Casual Wear</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-descr__video">
+                        <p>1:00 M</p>
+                        <button class="section-descr__btn-play">
+                            <img src="img/play-button.svg" alt="button play">
+                        </button>
+                        <h3>Raven Hoodie with black colored design</h3>
+                        <img src="img/video-img.webp" alt="img video">
+
+                    </div>
+                </div>
+            </section>
+            <section class="section-cards">
+                <div class="section-cards__container">
+                    <h2 class="section-cards__title  title--decor">Product Description</h2>
+                    <ul class="cards-list section-cards__list">
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card1.webp" alt="women t-shirt">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>White T-Shirt</h5>
+                                    </a>
+                                    <span>Priya’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 13.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card2.webp" alt="man hoody">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Dark Green Sweatshirt</h5>
+                                    </a>
+                                    <span>Roboto’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 127.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card3.webp" alt="women hoody">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Levender Sweatshirt</h5>
+                                    </a>
+                                    <span>Jhanvi’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 133.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card4.webp" alt="man jacket">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Urban jacket with white</h5>
+                                    </a>
+                                    <span>Sagar’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 79.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card8.webp" alt="man t-shirt">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Plain White T-Shirt</h5>
+                                    </a>
+                                    <span>Jhanvi’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 123.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card7.webp" alt="man shirt">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Checks Shirt with white.....</h5>
+                                    </a>
+                                    <span>H.M’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 123.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card6.webp" alt="women top">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>One piece black top & </h5>
+                                    </a>
+                                    <span>Nike’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 123.00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card cards-list__item section-cards__item">
+                            <button class="card__btn">
+                                <svg width="32" height="32">
+                                    <use href="./img/symbol-defs.svg#icon-like">
+                                    </use>
+                                </svg>
+                            </button>
+                            <img src="img/card5.webp" alt="man denim blue shirt">
+                            <div class="card__details">
+                                <div class="card__descr">
+                                    <a href="#">
+                                        <h5>Denim Blue Shirt</h5>
+                                    </a>
+                                    <span>MOMO’s Brand</span>
+                                </div>
+                                <div class="card__price">
+                                    <p>&#36; 38.00</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__list">
+                    <h2>Need Help</h2>
+                    <ul class="footer__list-link">
+                        <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Track Order</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Returns & Refunds</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">FAQ's</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h2>Company</h2>
+                    <ul class="footer__list-link">
+                        <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">euphoria Blog</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">euphoriastan</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Collaboration</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h2>More Info</h2>
+                    <ul class="footer__list-link">
+                        <li class="footer__item"><a class="footer__link" href="#">Term and Conditions</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Shipping Policy</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer__list">
+                    <h2>Location</h2>
+                    <ul class="footer__location">
+                        <li class="footer__location-item"><a href="mailto:support@euphoria.in">support@euphoria.in</a>
+                        </li>
+                        <li class="footer__location-item"><a href="">Eklingpura Chouraha, Ahmedabad Main Road</a></li>
+                        <li class="footer__location-item"><a href="">(NH 8- Near Mahadev Hotel) Udaipur, India-
+                                313002</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__downlaod">
+                <div class="downlaod-icon footer__icon">
+                    <ul class="downlaod-icon__list">
+                        <li class="downlaod-icon__item">
+                            <a href="#">
+                                <img src="img/fb.svg" alt="fb icon">
+
+                            </a>
+                        </li>
+                        <li class="downlaod-icon__item">
+                            <a href="#">
+                                <img src="img/inst.svg" alt="inst icon">
+                            </a>
+                        </li>
+                        <li class="downlaod-icon__item">
+                            <a href="#">
+                                <img src="img/twiter.svg" alt="twiter icon">
+                            </a>
+                        </li>
+                        <li class="downlaod-icon__item">
+                            <a href="#">
+                                <img src="img/in.svg" alt="in icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__appstor">
+                    <div class="footer__gplay">
+                        <img src="img/google.svg" alt="google icon google play">
+                        <div class="footer__text">
+                            <p>android app on</p>
+                            <p>Google Play</p>
+                        </div>
+                    </div>
+                    <div class="footer__app">
+                        <img src="img/store.svg" alt="app store icon">
+                        <div class="footer__text">
+                            <p>Available on the</p>
+                            <p>App Store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__categories">
+                <h2 class="footer__title">Popular Categories</h2>
+                <button class="footer__btn">
+                    <svg width="8" height="17">
+                        <use href="./img/symbol-defs.svg#icon-arow-down-f">
+
+                        </use>
+                    </svg>
+                </button>
+            </div>
+            <div class=" copyright footer__copyright">
+                <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
