@@ -13,48 +13,50 @@
     <header class="header">
         <div class="header__container">
             <nav class="header__nav">
-                <a href="#">
-                    <img src="img/logo.svg" alt="logo">
+                <a class="header__logo" href="#">
+                    <img class="header__img" src="img/logo.svg" alt="logo">
                 </a>
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Shop</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Men</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Women</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Combos</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Joggers</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Shop</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Men</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Women</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Combos</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Joggers</a></li>
                 </ul>
             </nav>
-            <div class="header__form">
-                <form>
+            <div class="header__search">
+                <form class="header__form">
                     <button type="submit"></button>
                     <input type="text" placeholder="Search">
                 </form>
             </div>
-            <ul class="header__icon">
-                <li>
-                    <a href="#"></a>
-                    <svg class="header__icon-svg" width="20" height="20">
-                        <use href="./img/symbol-defs.svg#icon-like">
+            <ul class="icon header__icon">
+                <li class="icon__list">
+                    <a href="#">
+                        <svg class="header__svg" width="20" height="20">
+                            <use href="./img/symbol-defs.svg#icon-like">
 
-                        </use>
-                    </svg>
-
+                            </use>
+                        </svg>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <svg class="header__icon-svg" width="20" height="20">
-                        <use href="./img/symbol-defs.svg#icon-user">
+                <li class="icon__list">
+                    <a href="#">
+                        <svg class="header__svg" width="20" height="20">
+                            <use href="./img/symbol-defs.svg#icon-user">
 
-                        </use>
-                    </svg>
+                            </use>
+                        </svg>
+                    </a>
                 </li>
-                <li>
-                    <a href="#"></a>
-                    <svg class="header__icon-svg" width="20" height="20">
-                        <use href="./img/symbol-defs.svg#icon-shopping-cart">
+                <li class="icon__list">
+                    <a href="#">
+                        <svg class="header__svg" width="20" height="20">
+                            <use href="./img/symbol-defs.svg#icon-shopping-cart">
 
-                        </use>
-                    </svg>
+                            </use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -83,7 +85,7 @@
                             <a href="#">Women</a>
                             <a href="#">Top</a>
                         </div>
-                        <h1 class="hero-section__title title">Raven Hoodie With
+                        <h1 class="hero-section__title">Raven Hoodie With
                             Black colored Design</h1>
                         <div class="rating hero-section__rating ">
                             <img class="rating__star" src="img/star.svg" alt="rating 5 out of 5">
@@ -94,18 +96,18 @@
                         </div>
                         <p class="hero-section__grade">3.4</p>
                         <div class="hero-section__comment">
-                            <a class="hero-section__comment-link" href="#">
+                            <a class="hero-section__link" href="#">
                                 <svg width="20" height="18">
                                     <use href="./img/symbol-defs.svg#icon-message">
 
                                     </use>
                                 </svg>
                             </a>
-                            <a class="hero-section__comment-link link" href="#">120 comments</a>
+                            <a class="hero-section__link link" href="#">120 comments</a>
                         </div>
                         <div class="hero-section__size">
-                            <h4>Select Size</h4>
-                            <a href="#">Size Guide</a>
+                            <h4 class="hero-section__title">Select Size</h4>
+                            <a class="hero-section__link" href="#">Size Guide</a>
                             <a href="#">
                                 <img src="img/arow-right.svg" alt="link arow">
                             </a>
@@ -122,8 +124,8 @@
                             <div class="choose-colours hero-section__colours-btn">
                                 <ul class="choose-colours__list">
                                     <li class="choose-colours__item">
-                                        <button class="choose-colours__btn">
-                                            <svg class="choose-colours__btn--border" width="30" height="30">
+                                        <button class="choose-colours__btn choose-colours__btn--border">
+                                            <svg width="30" height="30">
                                                 <use href="./img/symbol-defs.svg#icon-colour-circle">
                                                 </use>
                                             </svg>
@@ -173,7 +175,8 @@
                                 </svg>
                                 Add to cart
                             </button>
-                            <button class="button-price hero-section__btn--transparent">&#36; 63.00</button>
+                            <button class="button-price hero-section__btn hero-section__btn--transparent">&#36;
+                                63.00</button>
                         </div>
                         <div class="advantages hero-section__advantages">
                             <div class="advantages__card">
@@ -200,7 +203,7 @@
             <section class="section-descr">
                 <div class="section-descr__container">
                     <div class="section-descr__text">
-                        <h2 class="section-descr__title  title--decor">Product Description</h2>
+                        <h2 class="section-descr__title  title title--decor">Product Description</h2>
                         <div class="section-descr__links">
                             <a href="#">Product Description</a>
                             <a href="#">User comments</a>
@@ -252,9 +255,9 @@
             </section>
             <section class="section-cards">
                 <div class="section-cards__container">
-                    <h2 class="section-cards__title  title--decor">Product Description</h2>
+                    <h2 class="section-cards__title title title--border">Similar Products</h2>
                     <ul class="cards-list section-cards__list">
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -274,7 +277,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -294,7 +297,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -314,7 +317,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -334,7 +337,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -354,7 +357,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -374,7 +377,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -394,7 +397,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="card cards-list__item section-cards__item">
+                        <li class="card cards-list__item ">
                             <button class="card__btn">
                                 <svg width="32" height="32">
                                     <use href="./img/symbol-defs.svg#icon-like">
@@ -424,7 +427,7 @@
             <div class="footer__links">
                 <div class="footer__list">
                     <h2>Need Help</h2>
-                    <ul class="footer__list-link">
+                    <ul class="footer__menu">
                         <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Track Order</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Returns & Refunds</a></li>
@@ -434,7 +437,7 @@
                 </div>
                 <div class="footer__list">
                     <h2>Company</h2>
-                    <ul class="footer__list-link">
+                    <ul class="footer__menu">
                         <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">euphoria Blog</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">euphoriastan</a></li>
@@ -444,7 +447,7 @@
                 </div>
                 <div class="footer__list">
                     <h2>More Info</h2>
-                    <ul class="footer__list-link">
+                    <ul class="footer__menu">
                         <li class="footer__item"><a class="footer__link" href="#">Term and Conditions</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
                         <li class="footer__item"><a class="footer__link" href="#">Shipping Policy</a></li>
@@ -453,42 +456,45 @@
                 </div>
                 <div class="footer__list">
                     <h2>Location</h2>
-                    <ul class="footer__location">
-                        <li class="footer__location-item"><a href="mailto:support@euphoria.in">support@euphoria.in</a>
+                    <ul class="footer__location location">
+                        <li class="location__item"><a class="location__address"
+                                href="mailto:support@euphoria.in">support@euphoria.in</a>
                         </li>
-                        <li class="footer__location-item"><a href="">Eklingpura Chouraha, Ahmedabad Main Road</a></li>
-                        <li class="footer__location-item"><a href="">(NH 8- Near Mahadev Hotel) Udaipur, India-
+                        <li class="location__item"><a class="location__address" href="">Eklingpura Chouraha, Ahmedabad
+                                Main Road</a></li>
+                        <li class="location__item"><a class="location__address" href="">(NH 8- Near Mahadev Hotel)
+                                Udaipur, India-
                                 313002</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer__downlaod">
-                <div class="downlaod-icon footer__icon">
-                    <ul class="downlaod-icon__list">
-                        <li class="downlaod-icon__item">
+            <div class="footer__download">
+                <div class="download-icon footer__icon">
+                    <ul class="download-icon__list">
+                        <li class="download-icon__item">
                             <a href="#">
                                 <img src="img/fb.svg" alt="fb icon">
 
                             </a>
                         </li>
-                        <li class="downlaod-icon__item">
+                        <li class="download-icon__item">
                             <a href="#">
                                 <img src="img/inst.svg" alt="inst icon">
                             </a>
                         </li>
-                        <li class="downlaod-icon__item">
+                        <li class="download-icon__item">
                             <a href="#">
                                 <img src="img/twiter.svg" alt="twiter icon">
                             </a>
                         </li>
-                        <li class="downlaod-icon__item">
+                        <li class="download-icon__item">
                             <a href="#">
                                 <img src="img/in.svg" alt="in icon">
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__appstor">
+                <div class="footer__store">
                     <div class="footer__gplay">
                         <img src="img/google.svg" alt="google icon google play">
                         <div class="footer__text">
