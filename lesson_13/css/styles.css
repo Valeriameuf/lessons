@@ -1,0 +1,206 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+/* Base */
+body {
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  color: #800080;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+[class*="__container"] {
+  max-width: 76.25rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.header-page {
+  background-color: #e0ffff;
+  padding: 32px 0 32px;
+  font-size: 30px;
+  text-align: center;
+}
+.header-page__ind {
+  margin-bottom: 50px;
+}
+
+/* Content 2D */
+.content__2d,
+.content__3d {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.content__2d .content__block div {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  transition: all 0.8s ease 0s;
+}
+
+/* Translate */
+.content__translate {
+  background-color: #6495ed;
+}
+.content__translate:hover {
+  transform: translate(20px, 20px);
+  background-color: #800080;
+  color: #e0ffff;
+  border-radius: 50%;
+}
+
+/* Scale */
+.content__scale {
+  background-color: #6495ed;
+}
+.content__scale:hover {
+  transform: scale(3);
+  background-color: #800080;
+  color: #e0ffff;
+  border-radius: 50%;
+}
+
+/* Rotate */
+.content__rotate {
+  background-color: #6495ed;
+}
+.content__rotate:hover {
+  transform: rotate(50deg);
+  background-color: #800080;
+  color: #e0ffff;
+  border-radius: 50%;
+}
+
+/* Skew */
+.content__skew {
+  background-color: #6495ed;
+}
+.content__skew:hover {
+  transform: skew(10deg, 20deg);
+  background-color: #800080;
+  color: #e0ffff;
+}
+
+/* Matrix */
+.content__matrix {
+  background-color: #6495ed;
+}
+.content__matrix:hover {
+  transform: matrix(2, 1, 0, 2, 2, 1);
+  background-color: #800080;
+  color: #e0ffff;
+}
+
+/* Transfor-Origin */
+.content__origin {
+  background-color: #6495ed;
+  transform-origin: 0 0;
+}
+.content__origin:hover {
+  transform: rotate(20deg);
+  background-color: #800080;
+  color: #e0ffff;
+  border-radius: 50%;
+}
+
+/* 3D */
+.content__3d .content__item div {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  transition: all 0.8s ease 0s;
+}
+.content__3d .content__item {
+  width: 150px;
+  height: 150px;
+  background-color: #ffb6c1;
+  perspective-origin: center;
+  perspective: 800px;
+}
+
+/* Translate3D */
+.content__translate3d {
+  background-color: #6495ed;
+}
+.content__translate3d:hover {
+  transform: translate3D(10px, 10px, 30px);
+}
+
+/* Scale3D */
+.content__scale3d {
+  background-color: #6495ed;
+}
+.content__scale3d:hover {
+  transform: scale3D(2, 2, 3);
+}
+
+/* Rotate3D */
+.content__rotate3d {
+  background-color: #6495ed;
+}
+.content__rotate3d:hover {
+  transform: rotate3d(8, 5, 1, 90deg);
+}
+
+/* Matrix3D */
+.content__multi3d {
+  background-color: #6495ed;
+}
+.content__multi3d:hover {
+  transform: translate3d(40px, 0, 100px) rotate3d(2, 6, 9, 70deg);
+}
+
+/* Backface */
+.invert__inside {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease 0s;
+  transform-style: preserve-3d;
+}
+.invert__front,
+.invert__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invert__front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background-color: #6495ed;
+  backface-visibility: hidden;
+}
+.invert__back {
+  transform: rotateY(-180deg);
+  background-color: #800080;
+  color: #e0ffff;
+  border-radius: 50%;
+}
+.invert:hover .invert__inside {
+  transform: rotateY(-180deg);
+}
