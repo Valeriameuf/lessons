@@ -342,7 +342,7 @@ body {
   z-index: 2;
   transition-duration: 0.5s;
 }
-.car-wind:hover {
+.car-top3:hover .car-wind {
   transform: rotate(178deg);
   transform-origin: 73px;
 }
@@ -358,7 +358,7 @@ body {
   z-index: 2;
   transition: 0.5s ease;
 }
-.car-wind2:hover {
+.car-top2:hover .car-wind2{
   transform: translateY(150px);
 }
 .car-top2 img {
