@@ -25,16 +25,9 @@ body {
   padding: 0 0.9375rem;
   margin: 0 auto;
 }
-.cards__title--hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 img {
   vertical-align: top;
+  max-width: 100%;
 }
 
 [class*="__ident"] {
@@ -142,20 +135,20 @@ img {
   max-width: 100%;
 }
 /* Skin */
-.skin__padd {
-  padding: 155px 157px;
-}
 .skin__container {
   position: relative;
+  padding: 155px 15px;
+  max-width: 1340px;
+  margin: 0 auto;
 }
 
-.images-left__top img {
+.images-left__top {
   position: absolute;
-  bottom: 401px;
-  left: -41px;
+  top: 100px;
+  left: 0;
   /* max-width: 100%; */
 }
-.images-left__bottom img {
+.images-left__bottom {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -206,22 +199,22 @@ img {
   color: #000;
 }
 
-.images-right__top img {
+.images-right__top {
   position: absolute;
-  bottom: 454px;
+  top: 50px;
   right: 0;
   /* max-width: 100%; */
 }
-.images-right__middle img {
+.images-right__middle {
   position: absolute;
-  bottom: 241px;
-  right: -108px;
+  bottom: 300px;
+  right: 0;
   /* max-width: 100%; */
 }
-.images-right__bottom img {
+.images-right__bottom {
   position: absolute;
-  bottom: -95px;
-  right: 18px;
+  bottom: 0;
+  right: 150px;
   /* max-width: 100%; */
 }
 /* Cards */
