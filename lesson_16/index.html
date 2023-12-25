@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--ident"></header>
+        <main class="main">
+            <section class="first-form first-form--ident">
+                <div class="first-form__container">
+                    <div class="first-form__titles primary-titles">
+                        <h2>Check Out</h2>
+                        <h3>Billing Details</h3>
+                    </div>
+                    <form class="first-form__form first-form__form--decor" name="contact-form" autocomplete="off"
+                        action="#" method="POST">
+                        <div class="first-form__body form form--interval">
+
+                            <div class="form__field">
+                                <label class="form__label" for="user-name">First Name*</label>
+                                <input class="form__control" type="text" id="user-name" name="user_name" value=""
+                                    placeholder="First Name" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="location">Country / Region*</label>
+                                <input class="form__control" type="text" id="location" name="location" value=""
+                                    placeholder="Country / Region" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="address">Street Address*</label>
+                                <input class="form__control" type="text" id="address" name="address" value=""
+                                    placeholder="House number and street name" required>
+                            </div>
+
+                            <div class="form__field">
+                                <label class="form__label" for="last-name">Last Name*</label>
+                                <input class="form__control" type="text" id="last-name" name="last_name" value=""
+                                    placeholder="Last Name" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="company">Company Name</label>
+                                <input class="form__control" type="text" id="company" name="company" value=""
+                                    placeholder="Company (optional)">
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="unit">Apt, suite, unit</label>
+                                <input class="form__control" type="text" id="unit" name="unit"
+                                    placeholder="apartment, suite, unit, etc. (optional)">
+                            </div>
+
+                            <div class="form__field">
+                                <label class="form__label" for="place">City*</label>
+                                <input class="form__control  form__control--size" type="text" id="place" name="place"
+                                    value="" placeholder="City*" required>
+                            </div>
+                            <div class="form__field select">
+                                <label class="form__label " for="state">State*</label>
+                                <select id="state" class="select__control">
+                                    <option value="select">State</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Hungary">Hungary</option>
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label " for="postal-code">Postal Code*</label>
+                                <input class="form__control  form__control--size" type="code" id="postal-code"
+                                    name="postal_code" value="" placeholder="Postal Code" pattern="[0-9]{6}" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label " for="user-tel">Phone*</label>
+                                <input class="form__control input__phone" type="tel" id="user-tel" name="user_tel"
+                                    value="" placeholder="Phone" pattern="^\+[0-9]{12}" required>
+                            </div>
+                        </div>
+                        <button class="primary__button button" type="submit">Continue to delivery</button>
+
+                        <div class="first-form__save checkbox">
+                            <input class="checkbox__input" type="checkbox" id="click">
+                            <label class="checkbox__lable" for="click">Save my information for a faster
+                                checkout</label>
+                        </div>
+                    </form>
+                    <div class="shipping">
+                        <div class="shipping__title">
+                            <h3>Shipping Address</h3>
+                            <p>Select the address that matches your card or payment method.</p>
+                        </div>
+                        <div class="shipping__address option option--decor">
+                            <div class="option__item">
+                                <input class="option__input" type="radio" name="option" value="" id="billing-address">
+                                <label class="option__lable" for="billing-address">Same as Billing address</label>
+                            </div>
+                            <div class="option__item">
+                                <input class="option__input" type="radio" name="option" value="" id="different-shipp">
+                                <label for="different-shipp" class="option__lable">Use a different shipping
+                                    address</label>
+                            </div>
+                        </div>
+                        <div class="shipping__title">
+                            <h3>Shipping Method</h3>
+                        </div>
+                        <div class="shipping__address option after after--decor">
+                            <div class="option__item">
+                                <p class="option__lable">Arrives by Monday, June 7</p>
+                            </div>
+                            <div class="option__item">
+                                <div class="option__deliv">
+                                    <p>Delivery Charges</p>
+                                    <span>&#36; 5.00</span>
+                                </div>
+                                <div class="option__text">
+                                    <p>Additional fess may apply</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shipping__title payment payment__title">
+                            <h3>Payment Method</h3>
+                            <p>All transactions are secure and encrypted.</p>
+                        </div>
+                        <div class="payment__area">
+                            <div class="payment__items">
+                                <div class="payment__radio payment__radio--marg">
+                                    <input class="option__input" type="radio" name="cash" value="" id="payment">
+                                    <label class="option__lable" for="payment">
+                                        Credit Card
+                                    </label>
+                                    <p>We accept all major credit cards.</p>
+                                </div>
+                                <div class="payment__section">
+                                    <div class="payment__cards">
+                                        <a href="#">
+                                            <img src="img/pay.png" alt="pay card">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/visa.png" alt="pay card">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/paypal.png" alt="pay card">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/paypass.png" alt="pay card">
+                                        </a>
+                                    </div>
+                                    <div class="payment__inputs payment--line ">
+                                        <div class="payment__item">
+                                            <input class="payment__control" type="text" id="card-number"
+                                                name="card_number" value="" placeholder="Card number">
+                                        </div>
+                                        <div class="payment__item">
+
+                                            <input class="payment__control" type="month" id="exp-date" name="exp_date"
+                                                value="" placeholder="Expiration date (MM/YY)">
+                                        </div>
+                                        <div class="payment__item">
+                                            <input class="payment__control" type="text" id="name-card" name="name_card"
+                                                value="" placeholder="Name of card">
+                                        </div>
+                                        <div class="payment__item">
+                                            <input class="payment__control" type="password" id="card-code"
+                                                name="card_code" value="" placeholder="Security Code">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment__radio">
+                                <div class="payment__field payment--line ">
+                                    <input class="option__input" type="radio" id="cash" name="cash" value="">
+                                    <label for="cash" class="option__lable">
+                                        Cash on delivery
+                                    </label>
+                                    <p>Pay with cash upon delivery.</p>
+                                </div>
+                                <div class="payment__field">
+                                    <input class="option__input" type="radio" id="delivery" name="cash" value="">
+                                    <label for="delivery" class="option__lable">
+                                        Paypol
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="shipping__btn button" href="#">Pay Now</a>
+                    </div>
+                </div>
+            </section>
+            <section class="second-form second-form--ident">
+                <div class="second-form__container">
+                    <div class="second-form__titles primary-titles">
+                        <h2>My Info</h2>
+                        <h3>Add Address</h3>
+                    </div>
+                    <form class="second-form__form" name="contactForm" autocomplete="off" action="#" method="POST">
+                        <div class=" second-form__body form form--distance">
+                            <div class="form__field">
+                                <label class="form__label" for="first-name">First Name*</label>
+                                <input class="form__control" type="text" id="first-name" name="first_name" value=""
+                                    placeholder="First Name" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="country">Country / Region*</label>
+                                <input class="form__control" type="text" id="country" name="country" value=""
+                                    placeholder="Country / Region" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="street-address">Street Address*</label>
+                                <input class="form__control" type="text" id="street-address" name="street_adress"
+                                    value="" placeholder="House number and street name" required>
+                            </div>
+
+                            <div class="form__field">
+                                <label class="form__label" for="name-last">Last Name*</label>
+                                <input class="form__control" type="text" id="name-last" name="name_last" value=""
+                                    placeholder="Last Name" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="company-name">Company Name</label>
+                                <input class="form__control" type="text" id="company-name" name="company_name" value=""
+                                    placeholder="Company (optional)">
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="suite">Apt, suite, unit</label>
+                                <input class="form__control" type="text" id="suite" name="suite" value=""
+                                    placeholder="apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="city">City*</label>
+                                <input class="form__control" type="text" id="city" name="city" value=""
+                                    placeholder="City*" required>
+                            </div>
+                            <div class="form__field select">
+                                <label class="form__label " for="nation">State*</label>
+                                <select id="nation" class="select__control select__control--size">
+                                    <option value="select">State</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Hungary">Hungary</option>
+                                </select>
+                                <div class="select__arrow"></div>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label " for="code-postal">Postal Code*</label>
+                                <input class="form__control" type="code" id="code-postal" name="code_postal" value=""
+                                    placeholder="Postal Code" pattern="[0-9]{6}" required>
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label " for="user-phone">Phone*</label>
+                                <input class="form__control" type="tel" id="user-phone" name="user_phone" value=""
+                                    placeholder="Phone" pattern="^\+[0-9]{12}" required>
+                            </div>
+                            <div class="form__delivery">
+                                <label class="form__lable" for="deliver">Delivery Instruction</label>
+                                <textarea class="form__textarea" maxlength="500" name="deliver" value="" id="deliver"
+                                    placeholder="Delivery Instruction"></textarea>
+                            </div>
+                        </div>
+                        <div class="second-form__checkbox checkbox ">
+                            <div class="checkbox__body ">
+                                <input class="checkbox__input" type="checkbox" id="shipping" name="default">
+                                <label class="checkbox__label" for="shipping">Set as default shipping address</label>
+                            </div>
+                            <div class="checkbox__body">
+                                <input class="checkbox__input" type="checkbox" id="billing" name="default">
+                                <label class="checkbox__label" for="billing">Set as default billing address</label>
+                            </div>
+
+                        </div>
+                        <div class="second-form__buttons">
+                            <button class="second-form__btn button">Save</button>
+                            <button class="second-form__btn button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="contact contact--ident">
+                <div class="contact__container">
+                    <div class="contact__titles">
+                        <h4 class="contact__subtitle">Contact Us</h4>
+                        <h1 class="contact__title">Request A Call Back !</h1>
+                    </div>
+                    <form class="contact__form" name="formContact" autocomplete="off" action="#" method="POST">
+                        <div class="contact__body">
+                            <div class="contact__field">
+                                <label class="contact__label visually-hidden" for="your-name">Your Name</label>
+                                <input class="contact__control" type="text" id="your-name" name="your_name" value=""
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label visually-hidden" for="phone-num">Phone Number</label>
+                                <input class="contact__control" type="text" id="phone-num" name="phone_num" value=""
+                                    placeholder="Phone Number" pattern="^\+[0-9]{12}" required>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label visually-hidden" for="mail">Email Address</label>
+                                <input class="contact__control" type="text" id="mail" name="mail" value=""
+                                    placeholder="Email Address"
+                                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                            </div>
+                            <div class="contact__field">
+                                <label class="contact__label visually-hidden" for="sub">Subject</label>
+                                <input class="contact__control" type="text" id="sub" name="sub" placeholder="Subject">
+                            </div>
+                            <div class="contact__field contact__field--size">
+                                <textarea class="conatct__textarea" name="message_area" id="message-area"
+                                    placeholder="Message.." value=""></textarea>
+                            </div>
+                        </div>
+                        <button class="contact__btn">Submit</button>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

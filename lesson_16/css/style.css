@@ -1,0 +1,592 @@
+@import url("reset.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@700&display=swap");
+
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-65Bold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-65Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"),
+    url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"),
+    url("../fonts/Causten-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-semi-bold.woff2") format("woff2"),
+    url("../fonts/causten-semi-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-bold.woff2") format("woff2"),
+    url("../fonts/causten-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Base */
+body {
+  font-family: "Causten", sans-serif;
+  font-weight: 400;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  overflow-x: clip;
+  flex-grow: 1;
+}
+.header {
+  background-color: #37393f;
+  height: 150px;
+}
+.footer {
+  background-color: #37393f;
+  height: 150px;
+}
+[class*="--ident"] {
+  margin-bottom: 150px;
+}
+.primary-titles {
+  font-family: "Core Sans C";
+  font-size: 28px;
+  font-weight: 600;
+  color: #3c4242;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+}
+.primary-titles h3 {
+  font-size: 22px;
+  line-height: 1.52;
+  letter-spacing: 0.44px;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  font-family: "Causten";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  border-radius: 8px;
+  background: #8a33fd;
+  cursor: pointer;
+  color: #fff;
+  padding: 16px 20px;
+}
+.payment--line {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #bebcbd;
+}
+/* Header */
+/* First-form */
+.first-form__container {
+  max-width: 52.5rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+.first-form__titles h2 {
+  background: url("../img/decor-clothing.svg") 0 2px no-repeat;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.first-form__titles {
+  margin-bottom: 50px;
+}
+.first-form__form {
+  margin-bottom: 30px;
+}
+.first-form__form--decor {
+  position: relative;
+}
+.first-form__form--decor::before {
+  content: "";
+  position: absolute;
+  width: 840px;
+  left: 0;
+  bottom: 0px;
+  height: 1px;
+  background-color: #edeef2;
+}
+.first-form__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 32px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.32px;
+  color: #3c4242;
+  margin-bottom: 10px;
+}
+.form__control {
+  font-family: "Causten", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  border-radius: 8px;
+  background: #f6f6f6;
+  width: 382px;
+  padding: 16px 20px;
+  color: #807d7e;
+  cursor: pointer;
+}
+.select {
+  position: relative;
+}
+.select__arrow {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../img/down-arrow.svg) no-repeat center / cover;
+  transition: background-image 0.2s;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  pointer-events: none;
+}
+.select__control {
+  outline: 0;
+  border-radius: 8px;
+  background: #f6f6f6;
+  width: 246px;
+  padding: 16px 20px;
+  color: #807d7e;
+  appearance: none;
+}
+.form__control--size {
+  width: 246px;
+}
+.form--interval {
+  margin-bottom: 44px;
+}
+.primary__button {
+  transition: 0.3s linear;
+  margin-bottom: 20px;
+}
+.primary__button:hover {
+  color: #3c4242;
+  opacity: 0.9;
+}
+.first-form__save {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #3c4242;
+}
+.checkbox {
+  padding-bottom: 32px;
+}
+
+/* Shipping */
+.shipping__title {
+  font-family: "Core Sans C";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.52;
+  letter-spacing: 0.44px;
+  color: #3c4242;
+  margin-bottom: 30px;
+}
+.shipping__title h3 {
+  margin-bottom: 8px;
+}
+.shipping__title p {
+  font-family: "Causten";
+  font-weight: 400;
+  color: #3c4242;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.shipping__address {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  padding: 38px 48px 39px 28px;
+  margin-bottom: 60px;
+}
+.option__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.option__input + lable {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.option__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.option__input:checked + label::before {
+  border-color: #3c4242;
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23807D7E'/%3e%3c/svg%3e");
+}
+.option__item:not(:last-child) {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #bebcbd;
+}
+.option__lable {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-family: "Causten";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4242;
+  margin-bottom: 5px;
+}
+.option--decor {
+  position: relative;
+}
+.option--decor::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -32px;
+  height: 1px;
+  background-color: #edeef2;
+}
+.option__deliv {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: "Causten";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #3c4242;
+  margin-bottom: 8px;
+}
+.option__text p {
+  font-family: "Causten";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #807d7e;
+}
+/* Payment */
+.payment__title {
+  margin-bottom: 30px;
+}
+.payment__area {
+  border-radius: 12px;
+  background: #f6f6f6;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 45px 48px 45px 28px;
+  margin-bottom: 50px;
+}
+.payment__items {
+  margin-bottom: 60px;
+}
+.payment__radio p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #3c4242;
+  padding-left: 40px;
+}
+.payment__radio--marg {
+  margin-bottom: 30px;
+}
+.payment__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 31px;
+  margin-left: 15px;
+}
+.payment__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 28px;
+}
+.payment__item {
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+.payment__control {
+  color: #807d7e;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #3c4242;
+}
+
+.payment__field:not(:last-child) {
+  margin-bottom: 35px;
+}
+.shipping__btn:hover {
+  color: #3c4242;
+  opacity: 0.9;
+}
+
+/* Second-form */
+
+.second-form__container {
+  max-width: 55.9375rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.second-form__titles h2 {
+  margin-bottom: 20px;
+}
+.second-form__titles h3 {
+  margin-bottom: 50px;
+}
+.second-form__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px 30px;
+}
+.select__control--size {
+  width: 382px;
+}
+/* Textarea */
+.form__instriction {
+  display: flex;
+  flex-direction: column;
+  min-width: 426px;
+  gap: 10px;
+}
+.form__lable {
+  color: #3c4242;
+  font-family: "Causten";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+}
+.form__delivery {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 800px;
+  min-height: 149px;
+}
+
+.form__textarea {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  padding: 17px 21px;
+  resize: none;
+  border-radius: 8px;
+  background: #f6f6f6;
+}
+.form--distance {
+  margin-bottom: 30px;
+}
+.second-form__checkbox div:not(:last-child) {
+  margin-bottom: 15px;
+}
+.second-form__checkbox {
+  margin-bottom: 50px;
+}
+
+.second-form__buttons {
+  display: flex;
+  gap: 30px;
+}
+.second-form__btn {
+  padding: 12px 40px;
+  border-radius: 8px;
+  background: #8a33fd;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.second-form__btn:hover {
+  color: #807d7e;
+  background: #f6f6f6;
+}
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox__label {
+  font-size: 20.087px;
+  line-height: 1.2;
+  color: #3c4242;
+}
+.checkbox__input + label {
+  user-select: none;
+}
+
+.checkbox__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: #3c4242 1px solid;
+  border-radius: 0.25em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.checkbox__input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  gap: 10px;
+  cursor: pointer;
+}
+.checkbox__input + label::before {
+  border-color: #3c4242;
+  background-color: #f6f6f6;
+}
+.checkbox__input:focus + label::before {
+  background-color: #8a33fd;
+}
+.checkbox__input + label:hover::before {
+  border: 2px solid #3c4242;
+}
+.checkbox__input:active + label::before {
+  border-color: #3c4242;
+  box-shadow: 0 0 0 0.2rem rgba(43, 43, 44, 0.25);
+}
+
+/* Section-ContactForm */
+.contact {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #37393f;
+  line-height: 1.2;
+}
+.contact__container {
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.contact__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact__subtitle {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.contact__subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #40ddb6;
+  margin-right: 6px;
+}
+.contact__form {
+  text-align: center;
+}
+.contact__body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 28px;
+}
+.contact__body:not(:last-child) {
+  margin-bottom: 50px;
+}
+.contact__field {
+  padding: 0 17.5px;
+  min-width: 290px;
+  flex: 1 1 50%;
+}
+.contact__control {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  padding: 21px 42px;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.contact__field--size {
+  flex: 1 1 100%;
+  min-height: 222px;
+}
+.conatct__textarea {
+  font-family: "Inter";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  padding: 21px 40px;
+  resize: none;
+  color: #37393f;
+}
+.contact__btn {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  background: #6b77e5;
+  padding: 22px 61px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.contact__btn:hover {
+  color: #37393f;
+  background-color: #bebcbd;
+  text-decoration: underline;
+}
