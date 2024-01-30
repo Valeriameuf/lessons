@@ -1,0 +1,139 @@
+// Header
+@import "./breakpoint";
+
+@include laptopxl {
+  .popular {
+    &__titles {
+      margin-bottom: 50px;
+    }
+    &__titles h1 {
+      font-size: 54px;
+    }
+    &__cards {
+      gap: 35px;
+    }
+    &__text h5 {
+      font-size: 16px;
+    }
+  }
+}
+@include laptopl {
+  .header {
+    &__container {
+      gap: 50px;
+      justify-content: center;
+    }
+    &__logo {
+      font-size: 25px;
+    }
+    &__menu-btn {
+      display: flex;
+    }
+    &__nav {
+      order: 1;
+    }
+  }
+  .list {
+    position: absolute;
+    background-color: #502203;
+    color: $brand-light;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 25px 35px 25px 45px;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease;
+  }
+  .list.menu-open {
+    transform: translateY(0);
+  }
+  .popular {
+    &__item {
+      flex: 1 0 50%;
+    }
+  }
+}
+@include tablet {
+  .header {
+    &__container {
+      gap: 15px;
+      justify-content: flex-end;
+    }
+    &__logo {
+      font-size: 22px;
+    }
+  }
+  .footer {
+    &__list {
+      gap: 15px;
+      font-size: 25px;
+    }
+    &__email {
+      font-size: 32px;
+    }
+    &__icons {
+      margin-bottom: 40px;
+    }
+  }
+  .popular {
+    &__titles h1 {
+      font-size: 40px;
+    }
+    &r__titles {
+      margin-bottom: 40px;
+    }
+  }
+}
+@include mobilel {
+  .footer {
+    &__list {
+      font-size: 15px;
+    }
+    &__email {
+      font-size: 28px;
+    }
+    &__icons {
+      margin-bottom: 25px;
+    }
+    &__links a:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@include mobilexs {
+  .header {
+    &__container {
+      gap: 8px;
+      justify-content: center;
+      padding: 20px 15px;
+    }
+    &__logo {
+      font-size: 20px;
+    }
+    &__icon {
+      gap: 5px;
+    }
+  }
+  .footer {
+    &__email {
+      font-size: 20px;
+    }
+    &__links a:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .popular {
+    &__titles {
+      margin-bottom: 30px;
+    }
+    &__titles h1 {
+      font-size: 26px;
+    }
+    &__titles h3 {
+      font-size: 20px;
+    }
+  }
+}

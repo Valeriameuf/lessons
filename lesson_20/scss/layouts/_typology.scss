@@ -1,0 +1,35 @@
+.typology {
+  font-family: "Product Sans Infanity";
+  &__title--hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 15px 50px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+    gap: 20px;
+  }
+  &__text {
+    font-family: "Product Sans Infanity";
+    font-size: 14px;
+    line-height: 1.25;
+    color: $brand-dark;
+  }
+  &__text p {
+    margin-bottom: 10px;
+  }
+  &__item img {
+    width: 100%;
+    aspect-ratio: 271/336;
+    object-fit: contain;
+  }
+}

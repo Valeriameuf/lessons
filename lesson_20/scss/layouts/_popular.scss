@@ -1,0 +1,82 @@
+.popular {
+  background-color: $blue-dark;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 50px 15px 50px;
+  }
+  &__titles h1 {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 27px;
+  }
+  &__titles {
+    font-family: "DM Serif Text";
+    margin-bottom: 66px;
+  }
+  &__titles h3 {
+    font-family: "Cormorant Infant";
+    font-size: 30px;
+    line-height: 1.4;
+    color: #bcbcbc;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 46px;
+  }
+  &__item {
+    min-height: 100%;
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(232, 239, 237, 0.29);
+  }
+  &__item img {
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 364/265;
+    width: 100%;
+  }
+  &__text {
+    padding: 0 24px 18px;
+  }
+  &__text h5 {
+    font-family: "DM Serif Text";
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 23px;
+  }
+  &__calendar {
+    display: flex;
+    gap: 8px;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 23px;
+  }
+  &__svg {
+    fill: $brand-light;
+  }
+  &__link {
+    margin-top: auto;
+  }
+  &__link a {
+    text-decoration: underline;
+  }
+  &__link a:hover {
+    color: $links-color;
+  }
+  &__link a:active {
+    color: $brand-grey;
+  }
+}

@@ -1,0 +1,117 @@
+.header {
+  font-family: "Merriweather";
+  font-size: 20px;
+  font-weight: 400;
+  color: $brand-dark;
+  background-color: $backgraund-light;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 15px 31px;
+  }
+  &__logo {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  &__menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding: 0 15px;
+  }
+  &__icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.menu-btn__line {
+  height: 2px;
+  background-color: $burger-header;
+  width: 100%;
+}
+
+.list__item {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: -22px;
+    bottom: 6px;
+    background: url("../img/arrow-down.png");
+  }
+  &:hover {
+    color: $hover-list;
+    text-decoration: underline;
+    &:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+.icon__link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.badg {
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  transform: translate(20%, -10%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 12px;
+  color: $brand-light;
+
+  &--color {
+    background: $red-circle;
+  }
+}
+.icon__sum--bg {
+  right: 5px;
+  top: 7px;
+}
+.icon__ident {
+  display: block;
+  margin-left: 8px;
+}
