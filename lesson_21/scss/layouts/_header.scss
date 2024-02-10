@@ -68,7 +68,10 @@
     transition: background-color 0.3s;
   }
 }
-
+.close__btn {
+  width: 50px;
+  background-color: #f6f6f6;
+}
 .mobile-nav,
 .menu__close {
   display: none;
